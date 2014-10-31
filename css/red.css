@@ -1,0 +1,177 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.botones-sociales {
+position: fixed;
+top: 130px;
+width: 45px;
+z-index: 9999;
+}
+.izquierda {
+left: 0;
+}
+.derecha{
+right: 0;
+}
+.botones-sociales #pinterest-btn .social{
+	background-color: #695F5B;
+	background-image: url('../image/nombre.png');
+	box-shadow:0 0 28px #06FF1B;
+	-webkit-animation: myfirst 10s infinite;
+ animation: myfirst 10s infinite;
+}
+.botones-sociales #google-btn .social,
+.botones-sociales #twitter-btn .social,
+.botones-sociales #facebook-btn .social,
+.botones-sociales #rss-btn .social,
+.botones-sociales #youtube-btn .social {
+background-color: #695F5B;
+background-image: url('../image/prueba.png');
+box-shadow:0 0 28px #06FF1B;
+ -webkit-animation: myfirst 10s infinite;
+ animation: myfirst 10s infinite;
+}
+@-webkit-keyframes myfirst {
+    0%   {box-shadow:0 0 28px #06FF1B;}
+    10%  {box-shadow:0 0 28px #3304ED;}
+    25%  {box-shadow:0 0 28px #EDD904;}
+    50%  {box-shadow:0 0 28px #3304ED;}
+    65%  {box-shadow:0 0 28px #EDD904;}
+    80%  {box-shadow:0 0 28px #CA04ED;}
+    100% {box-shadow:0 0 28px #06FF1B;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+	 0%   {box-shadow:0 0 28px #06FF1B;}
+    10%  {box-shadow:0 0 28px #3304ED;}
+    25%  {box-shadow:0 0 28px #EDD904;}
+    50%  {box-shadow:0 0 28px #3304ED;}
+    65%  {box-shadow:0 0 28px #EDD904;}
+    80%  {box-shadow:0 0 28px #CA04ED;}
+    100% {box-shadow:0 0 28px #06FF1B;}
+}
+.izquierda #facebook-btn span {
+background-position: right 5px;
+}
+.izquierda #twitter-btn span {
+background-position: right -35px;
+}
+.izquierda #google-btn span {
+background-position: right -127px;
+}
+.izquierda #rss-btn span {
+background-position: right -80px;
+}
+.izquierda #pinterest-btn span {
+background-position: right 10px;
+}
+.izquierda #youtube-btn span {
+background-position: 11px -223px;
+}
+.derecha #facebook-btn span {
+background-position: 6px 2px;
+}
+.derecha #twitter-btn span {
+background-position: 7px -38px;
+}
+.derecha #google-btn span {
+background-position: 10px -127px;
+
+}
+.derecha #rss-btn span {
+background-position: 7px -82px;
+}
+.derecha #pinterest-btn span {
+background-position: 6px 2px;
+}
+.derecha #youtube-btn span {
+background-position: 11px -223px;
+}
+.botones-sociales #facebook-btn:hover .social {
+background-color: #F08317;
+width:194px;
+-webkit-transition:all 1s ease;
+-moz-transition:all 1s ease;
+-o-transition:all 1s ease;
+transition:all 1s ease;
+}
+.botones-sociales #twitter-btn:hover .social {
+background-color: #F08317;
+width:170px;
+-webkit-transition:all 1s ease;
+-moz-transition:all 1s ease;
+-o-transition:all 1s ease;
+transition:all 1s ease;
+}
+.botones-sociales #rss-btn:hover .social {
+background-color: #F08317;
+width:170px;
+-webkit-transition:all 1s ease;
+-moz-transition:all 1s ease;
+-o-transition:all 1s ease;
+transition:all 1s ease;
+}
+.botones-sociales #pinterest-btn:hover .social {
+background-color: #F08317;
+width:185px;
+-webkit-transition:all 1s ease;
+-moz-transition:all 1s ease;
+-o-transition:all 1s ease;
+transition:all 1s ease;
+}
+.botones-sociales a:hover .texto{
+display: block;
+}
+.izquierda .social {
+-moz-transition: background-color 0.4s ease-in 0s;
+-webkit-transition: background-color 0.4s ease-in 0s;
+background-repeat: no-repeat;
+display: block;
+float: left;
+height: 43px;
+margin-bottom: 2px;
+width: 43px;}
+
+.izquierda .texto{
+display: none;
+float: right;
+font-size: 1em;
+font-weight: bold;
+margin: 11px 40px 11px 0px;
+white-space: nowrap;
+}
+.derecha .social {
+-moz-transition: background-color 0.4s ease-in 0s;
+-webkit-transition: background-color 0.4s ease-in 0s;
+background-repeat: no-repeat;
+display: block;
+float: right;
+height: 43px;
+margin-bottom: 2px;
+width: 43px;}
+
+.derecha .texto {
+font-family:verdana, trebuchet Ms;
+display: none;
+float: left;
+font-size: 80%;
+font-weight: bold;
+margin: 11px 0 11px 40px;
+white-space: nowrap;
+}
+.botones-sociales .texto{
+	color: #fff;
+	font: bold 12px Arial, Helvetica;
+	text-shadow: 0 1px 0 #3C3C3C;
+}
+</style>
+
+<div class='botones-sociales derecha hidden-phone hidden-tablet'>
+<a class='itemsocial' href='url de facebook' id='facebook-btn' target='_blank'><span class='social'><span class='texto'>Síguenos via Facebook</span></span></a>
+<a class='itemsocial' href='url de twitter'id='twitter-btn' target='_blank'><span class='social'><span class='texto'>Síguenos via Twitter</span></span></a>
+<a class='itemsocial' href='url de google+' id='google-btn' target='_blank'><span class='social'><span class='texto'>Síguenos via Google</span></span></a>
+<a class='itemsocial'href='url de pinterest 'id='pinterest-btn' target='_blank'><span class='social'>
+<span class='texto'>Síguenos via Pinterest</span></span></a>
+<a class='itemsocial' href='url de youtube' id='youtube-btn' target='_blank'><span class='social'><span class='texto'>Síguenos via Youtube</span></span></a>
+<a class='itemsocial' href='url del feed' id='rss-btn' target='_blank'><span class='social'><span class='texto'>Síguenos via RSS</span></span></a>
+</div>

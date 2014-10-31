@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+#menus {
+	width: 177px;
+	margin: 60px auto;
+	border: 1px solid #F2A354;
+	/*background-color: rgb(255, 139, 12);*/ 
+	background-image: linear-gradient(#ffffff, #F2A354);
+	border-radius: 6px;
+	box-shadow: 0 1px 1px #777;
+}
+
+#menus, #menus ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menus:before,
+#menus:after {
+	content: "";
+	display: table;
+}
+
+#menus:after {
+	clear: both;
+}
+
+#menus {
+	zoom:1;
+}
+
+#menus li {
+	float: left;
+	/*border-right: 1px solid #222;
+	box-shadow: 1px 0 0 #444;*/
+	position: relative;
+}
+
+#menus a {
+	float: left;
+	padding: 12px 30px;
+	color: #959595;
+	text-transform: uppercase;
+	font: bold 12px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #3C3C3C;
+	width: 108px;
+}
+
+#menus li:hover > a {
+	/*color: #fafafa;*/
+	color: #fff;
+	background-color:#FF7300;
+	margin-left: 5px;
+}
+
+*html #menus li a:hover { /* IE6 only */
+	color: #fafafa;
+}
+
+#menus ul {
+	margin: 20px 0 0 0;
+	_margin: 0; /*IE6 only*/
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 180px;
+	z-index: 1;    
+	background: #444;	
+	background: linear-gradient(#444, #111);
+	box-shadow: 0 -1px 0 rgba(255,255,255,.3);	
+	border-radius: 3px;
+	transition: all .2s ease-in-out;  
+}
+
+#menus ul {
+	margin: 20px 0 0 0;
+	color: #ffffff;
+	_margin: 0; /*IE6 only*/
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 180px;
+	z-index: 1;    
+	background-color: #ffffff;	
+	background: linear-gradient(#444, #111);
+	box-shadow: 0 -1px 0 rgba(255,255,255,.3);	
+	border-radius: 3px;
+	transition: all .2s ease-in-out;  
+}
+
+#menus li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+	background-color: #ffffff;
+	color: #ffffff;
+}
+
+#menus ul ul {
+	top: 0;
+	left: 150px;
+	margin: 0 0 0 20px;
+	_margin: 0; /*IE6 only*/
+	box-shadow: -1px 0 0 rgba(255,255,255,.3);		
+	background-color: #ffffff;
+}
+
+#menus ul li {
+	float: none;
+	display: block;
+	border: 0;
+	_line-height: 0; /*IE6 only*/
+	box-shadow: 0 1px 0 #ffffff, 0 2px 0 #fff;
+	background-color: #fff;
+}
+
+#menus ul li:last-child {   
+	box-shadow: none;    
+	/*background-image: linear-gradient(#F2A354, #F2A354);*/
+	border-radius: 6px;
+	box-shadow: 0 1px 1px #ffffff;
+}
+
+#menus li:hover > a{
+	color: #ffffff;
+	background-color: #FF7300;
+}
+
+#menus ul a {    
+	padding: 10px;
+	color: #959595;
+	width: 130px;
+	border: 1px solid #ffffff;
+	border-radius: 6px;
+	box-shadow: 0 1px 1px #777;
+	_height: 10px; /*IE6 only*/
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+	background-image: linear-gradient(#F2A354, #eeeeee);
+}
+
+#menus ul:hover > a {
+	color: #ffffff;
+	background-color: #003366;
+}
+
+
+
+
+#menuencuesta,
+#menuencuesta ul,
+#menuencuesta li,
+#menuencuesta a {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 7px;
+}
+#menuencuesta {
+  width: 600px;
+}
+#menuencuesta > ul > li > a > span {
+  display: block;
+}
+
+#menuencuesta > ul > li.has-sub > a span {
+  background: url(../image/plusmen.png) 96% center no-repeat;
+}
+#menuencuesta > ul > li.has-sub.active > a span {
+  background: url(../image/minusmen.png) 96% center no-repeat;
+}
+/* Sub menu */
+#menuencuesta ul ul {
+  display: none;
+  background: #FBFBFB;
+/*  border-right: 2px solid #F0771A;
+  border-left: 2px solid #F0771A;
+  border-bottom: 2px solid #F0771A;
+  border-top: 2px solid #F0771A;*/
+}
+#menuencuesta ul ul li {
+  padding: 0;
+  border-bottom: none;
+  border-top: none;
+  background: #FBFBFB;
+}
+
+#menuencuesta ul ul a {
+
+  color: #000000;
+}
+
